@@ -1,0 +1,25 @@
+<ion-header color="mycolor">
+  <br>
+  <ion-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png"></ion-img>
+</ion-header>
+
+<ion-content>
+  <h1>Iniciar secion</h1>
+  <br>
+  <div id="container">
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+    <br>  
+    <ion-button type="submit" color="danger">siguiente</ion-button> 
+    <br><br>
+    <a [routerLink]="['/forgot-password']" class="small-text"> Recuperar contraseña</a>    
+  </form>
+</div>
+</ion-content>
